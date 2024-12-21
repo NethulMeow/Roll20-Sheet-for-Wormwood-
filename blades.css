@@ -561,7 +561,7 @@
 	    -ms-flex-positive: 1;
 	        flex-grow: 1;
 }
-.charsheet .playbookitems {
+.charsheet .archetypeitems {
 	background: var(--blades-lightest);
 }
 .charsheet .regularitems {
@@ -701,7 +701,7 @@
 	font-size: 10px;
 	height: 49px;
 }
-.charsheet .itemholder .playbookitems .expand ~ textarea {
+.charsheet .itemholder .archetypeitems .expand ~ textarea {
 	border-color: var(--blades-versiongrey);
 }
 
@@ -823,8 +823,8 @@
 	padding: 0 2px;
 }
 
-/* PLAYBOOK */
-.charsheet .playbook {
+/* ARCHETYPE */
+.charsheet .archetype {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -832,7 +832,7 @@
 	position: relative;
 	background: var(--blades-lightest);
 }
-.charsheet .playbook input[type=text] {
+.charsheet .archetype input[type=text] {
 	-webkit-box-flex: 0;
 	    -ms-flex: 0 0 auto;
 	        flex: 0 0 auto;
@@ -842,13 +842,13 @@
 	font-size: 35px;
 	line-height: 40px;
 }
-.charsheet .playbook .sheet-label:empty {
+.charsheet .archetype .sheet-label:empty {
 	display: inherit;
 }
-.charsheet .playbook .sheet-label {
+.charsheet .archetype .sheet-label {
 	text-align: left;
 }
-.charsheet .playbook textarea {
+.charsheet .archetype textarea {
 	height: 42px;
 	-webkit-box-flex: 0;
 	    -ms-flex: 0 0 auto;
@@ -861,7 +861,7 @@
 	overflow: hidden;
 	line-height: 14px;
 }
-.charsheet .playbook .reminder {
+.charsheet .archetype .reminder {
 	position: absolute;
 	border: 1px solid var(--blades-fontblack);
 	background: var(--blades-whitetext);
@@ -873,16 +873,16 @@
 	text-align: center;
 	padding: 3px;
 }
-.charsheet .type-character .playbook input[type=text] {
+.charsheet .type-character .archetype input[type=text] {
 	width: calc(64% - 10px);
 }
-.charsheet .type-character .playbook textarea {
+.charsheet .type-character .archetype textarea {
 	width: calc(36% + 6px);
 }
-.charsheet .type-crew .playbook input[type=text] {
+.charsheet .type-crew .archetype input[type=text] {
 	width: calc(74% - 7px);
 }
-.charsheet .type-crew .playbook textarea {
+.charsheet .type-crew .archetype textarea {
 	width: calc(26% + 3px);
 }
 
@@ -3611,7 +3611,7 @@
 .charsheet .use-kirsty[value="1"] ~ .container .blackheader,
 .charsheet .use-kirsty[value="1"] ~ .container .greyheader,
 .charsheet .use-kirsty[value="1"] ~ .container .black-on-grey,
-.charsheet .use-kirsty[value="1"] ~ .container .playbook input[type=text],
+.charsheet .use-kirsty[value="1"] ~ .container .archetype input[type=text],
 .charsheet .use-kirsty[value="1"] ~ .container .plainheader,
 .charsheet .use-kirsty[value="1"] ~ .container .itemheader :first-child,
 .charsheet .use-kirsty[value="1"] ~ .container .loadheader :first-child,
@@ -3653,7 +3653,7 @@
 .charsheet .use-kirsty[value="1"] ~ .container .factiontitle input[type=text] {
 	font-size: 32px;
 }
-.charsheet .use-kirsty[value="1"] ~ .container .playbook input[type=text] {
+.charsheet .use-kirsty[value="1"] ~ .container .archetype input[type=text] {
 	font-size: 40px;
 	letter-spacing: 0;
 }
@@ -3759,7 +3759,7 @@
 .charsheet.lang-ko .strictures {
 	font-size: 12px;
 }
-.charsheet.lang-ko .playbook textarea {
+.charsheet.lang-ko .archetype textarea {
 	font-size: 12px;
 }
 .charsheet.lang-ko .loadheader .loadnumber {
@@ -3870,7 +3870,7 @@
 .charsheet.lang-es .crewheader {
 	font-size: 24px;
 }
-.charsheet.lang-es .playbook input[type=text] {
+.charsheet.lang-es .archetype input[type=text] {
 	font-size: 32px;
 }
 .charsheet.lang-es .itemheader .italic {
@@ -3900,7 +3900,7 @@
 .charsheet.lang-pt .healing .healing-progress {
 	line-height: 10px;
 }
-.charsheet.lang-pt .playbook input[type=text] {
+.charsheet.lang-pt .archetype input[type=text] {
 	font-size: 32px;
 }
 .charsheet.lang-pt .coinrow button[type=roll].rollbutton {
