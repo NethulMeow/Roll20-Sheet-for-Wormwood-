@@ -6,7 +6,7 @@
   <input type="hidden" name="attr_trauma_max" value="4"/>
   <input type="hidden" name="attr_coin_max" value="4"/>
   <input type="hidden" name="attr_stash_max" value="40"/>
-  <input type="hidden" name="attr_playbook_xp_max" value="8"/>
+  <input type="hidden" name="attr_archetype_xp_max" value="8"/>
   <input type="hidden" name="attr_rep_max" value="12"/>
   <input type="hidden" name="attr_turf_max" value="6"/>
   <input type="hidden" name="attr_crew_tier_max" value="4"/>
@@ -49,7 +49,7 @@
   <div class="settings">
     <div class="setting-char generaterow">
       <select name="attr_generate_source_character">
-        <optgroup data-i18n-label="playbooks">
+        <optgroup data-i18n-label="archetypes">
           <option value="jock" data-i18n="jock" selected="selected"></option>
           <option value="hick" data-i18n="hick"></option>
           <option value="nerd" data-i18n="nerd"></option>
@@ -58,12 +58,12 @@
           <option value="theater" data-i18n="theater"></option>
           <option value="weird" data-i18n="weird"></option>
         </optgroup>
-        <optgroup data-i18n-label="spirit_playbooks">
+        <optgroup data-i18n-label="spirit_archetypes">
           <option value="ghost" data-i18n="ghost"></option>
           <option value="hull" data-i18n="hull"></option>
           <option value="vampire" data-i18n="vampire"></option>
         </optgroup>
-        <optgroup data-i18n-label="alternate_iruvian_playbooks">
+        <optgroup data-i18n-label="alternate_iruvian_archetypes">
           <option value="faris" data-i18n="faris"></option>
           <option value="forger" data-i18n="forger"></option>
           <option value="janissary" data-i18n="janissary"></option>
@@ -81,7 +81,7 @@
         <input type="checkbox" name="attr_generate_friend" value="1"/><span data-i18n="add_friends"></span>
       </label>
       <label class="generatebutton">
-        <input type="checkbox" name="attr_generate_playbookitem" value="1"/><span data-i18n="add_items"></span>
+        <input type="checkbox" name="attr_generate_archetypeitem" value="1"/><span data-i18n="add_items"></span>
       </label>
     </div>
     <div class="setting-crew generaterow">
@@ -359,11 +359,11 @@
           <div class="text"><span class="sheet-label title" data-i18n="sign"></span><span class="uppercase info" data-i18n="sign_info"></span></div>
         </label>
         <label>
-          <div class="auto-expand"><span name="attr_background"></span>
-            <textarea spellcheck="false" name="attr_background"></textarea>
+          <div class="auto-expand"><span name="attr_outlook"></span>
+            <textarea spellcheck="false" name="attr_outlook"></textarea>
           </div>
-          <input type="hidden" name="attr_background" value=""/>
-          <div class="text"><span class="sheet-label title" data-i18n="background"></span><span class="uppercase info" data-i18n="background_info"></span></div>
+          <input type="hidden" name="attr_outlook" value=""/>
+          <div class="text"><span class="sheet-label title" data-i18n="outlook"></span><span class="uppercase info" data-i18n="outlook_info"></span></div>
         </label>
         <input class="vice-input" type="hidden" name="attr_setting_vice_type" value="normal"/>
         <label class="vice normal">
@@ -675,21 +675,21 @@
       <div class="advancement sheet-2col">
         <div class="advancement-header flex blackheader">
           <div class="sheet-label markxp" data-i18n="mark_xp:"></div>
-          <div class="sheet-label" data-i18n="playbook_advancement"></div>
+          <div class="sheet-label" data-i18n="archetype_advancement"></div>
           <div class="xpholder flex">
             <input class="vampirexp" type="hidden" name="attr_setting_vampirexp" value="0"/>
-            <input class="tooth zero" type="radio" name="attr_playbook_xp" value="0" checked="checked"/><span></span>
-            <input class="tooth xptooth" type="radio" name="attr_playbook_xp" value="1"/><span></span>
-            <input class="tooth xptooth" type="radio" name="attr_playbook_xp" value="2"/><span></span>
-            <input class="tooth xptooth" type="radio" name="attr_playbook_xp" value="3"/><span></span>
-            <input class="tooth xptooth" type="radio" name="attr_playbook_xp" value="4"/><span></span>
-            <input class="tooth xptooth" type="radio" name="attr_playbook_xp" value="5"/><span></span>
-            <input class="tooth xptooth" type="radio" name="attr_playbook_xp" value="6"/><span></span>
-            <input class="tooth xptooth" type="radio" name="attr_playbook_xp" value="7"/><span></span>
-            <input class="tooth xptooth" type="radio" name="attr_playbook_xp" value="8"/><span></span>
+            <input class="tooth zero" type="radio" name="attr_archetype_xp" value="0" checked="checked"/><span></span>
+            <input class="tooth xptooth" type="radio" name="attr_archetype_xp" value="1"/><span></span>
+            <input class="tooth xptooth" type="radio" name="attr_archetype_xp" value="2"/><span></span>
+            <input class="tooth xptooth" type="radio" name="attr_archetype_xp" value="3"/><span></span>
+            <input class="tooth xptooth" type="radio" name="attr_archetype_xp" value="4"/><span></span>
+            <input class="tooth xptooth" type="radio" name="attr_archetype_xp" value="5"/><span></span>
+            <input class="tooth xptooth" type="radio" name="attr_archetype_xp" value="6"/><span></span>
+            <input class="tooth xptooth" type="radio" name="attr_archetype_xp" value="7"/><span></span>
+            <input class="tooth xptooth" type="radio" name="attr_archetype_xp" value="8"/><span></span>
             <input class="toothhider" type="hidden" name="attr_setting_vampirexp" value="0"/>
-            <input class="tooth xptooth" type="radio" name="attr_playbook_xp" value="9"/><span></span>
-            <input class="tooth xptooth" type="radio" name="attr_playbook_xp" value="10"/><span></span>
+            <input class="tooth xptooth" type="radio" name="attr_archetype_xp" value="9"/><span></span>
+            <input class="tooth xptooth" type="radio" name="attr_archetype_xp" value="10"/><span></span>
           </div>
         </div>
         <ul class="advancement-desc">
@@ -707,8 +707,8 @@
             </div>
           </li>
           <li>
-            <div class="auto-expand"><span name="attr_xp_condition2">You expressed your beliefs, drives, sign, or background.</span>
-              <textarea spellcheck="false" name="attr_xp_condition2">You expressed your beliefs, drives, sign, or background.</textarea>
+            <div class="auto-expand"><span name="attr_xp_condition2">You expressed your beliefs, drives, sign, or outlook.</span>
+              <textarea spellcheck="false" name="attr_xp_condition2">You expressed your beliefs, drives, sign, or outlook.</textarea>
             </div>
           </li>
           <li>
@@ -783,11 +783,11 @@
       </div>
     </div>
     <div class="right-column grid">
-      <div class="playbook sheet-2col flex">
-        <input class="sheet-label" type="text" spellcheck="false" name="attr_playbook" data-i18n-placeholder="playbook"/>
-        <textarea class="sheet-label" spellcheck="false" name="attr_playbook_description" data-i18n-placeholder="playbook_description"></textarea>
-        <input class="hider" type="hidden" name="attr_show_playbook_reminder" value="1"/>
-        <div class="reminder"><span data-i18n="autofill_reminder_playbook"></span><br/><span data-i18n="list_playbooks"></span></div>
+      <div class="archetype sheet-2col flex">
+        <input class="sheet-label" type="text" spellcheck="false" name="attr_archetype" data-i18n-placeholder="archetype"/>
+        <textarea class="sheet-label" spellcheck="false" name="attr_archetype_description" data-i18n-placeholder="archetype_description"></textarea>
+        <input class="hider" type="hidden" name="attr_show_archetype_reminder" value="1"/>
+        <div class="reminder"><span data-i18n="autofill_reminder_archetype"></span><br/><span data-i18n="list_archetypes"></span></div>
       </div>
       <div class="itemcolumn">
         <div class="loadheader flex">
@@ -809,8 +809,8 @@
           </label>
         </div>
         <div class="itemholder items">
-          <div class="playbookitems free-repcontrol">
-            <fieldset class="repeating_playbookitem">
+          <div class="archetypeitems free-repcontrol">
+            <fieldset class="repeating_archetypeitem">
               <input class="boxes-chosen" type="hidden" name="attr_boxes_chosen" value="0"/>
               <div class="item numboxes-chooser">
                 <div data-i18n="how_much_load"></div>
@@ -2433,16 +2433,16 @@
       </div>
     </div>
     <div class="right-column grid">
-      <div class="playbook sheet-2col flex">
+      <div class="archetype sheet-2col flex">
         <input class="sheet-label" type="text" spellcheck="false" name="attr_crew_type" data-i18n-placeholder="crew"/>
         <textarea class="sheet-label" spellcheck="false" name="attr_crew_description" data-i18n-placeholder="crew_description"></textarea>
-        <input class="hider" type="hidden" name="attr_show_playbook_reminder" value="1"/>
+        <input class="hider" type="hidden" name="attr_show_archetype_reminder" value="1"/>
         <div class="reminder"><span data-i18n="autofill_reminder_crew"></span><br/><span data-i18n="list_crews"></span></div>
       </div>
       <div class="upgradecolumn">
         <div class="itemheader"><span class="sheet-label" data-i18n="crew_upgrades"></span></div>
         <div class="itemholder upgrades">
-          <div class="playbookitems free-repcontrol">
+          <div class="archetypeitems free-repcontrol">
             <fieldset class="repeating_upgrade">
               <input class="boxes-chosen" type="hidden" name="attr_boxes_chosen" value="0"/>
               <div class="item numboxes-chooser">
@@ -2647,7 +2647,7 @@
                   </div>
                   <div class="item-description">
                     <input class="expand" type="checkbox" value="1"/><span></span>
-                    <textarea spellcheck="false" name="attr_upgrade_personal_description" data-i18n-placeholder="description">Earn 2 xp when training playbook during downtime.</textarea>
+                    <textarea spellcheck="false" name="attr_upgrade_personal_description" data-i18n-placeholder="description">Earn 2 xp when training archetype during downtime.</textarea>
                   </div>
                 </div>
             <div class="sheet-2col">
@@ -3143,8 +3143,8 @@
         name: getTranslationByKey(v)
       };
     });
-    Object.keys(playbookData).forEach(playbook => {
-      const base = playbookData[playbook].base,
+    Object.keys(archetypeData).forEach(archetype => {
+      const base = archetypeData[archetype].base,
         translatedBaseAttributes = [
           "char_cohort_name",
           "char_cohort_subtype",
@@ -3155,7 +3155,7 @@
           "gatherinfo4",
           "gatherinfo5",
           "gatherinfo6",
-          "playbook_description",
+          "archetype_description",
           "setting_stress_label",
           "setting_trauma_label",
           "special_abilities_title",
@@ -3168,29 +3168,29 @@
           base[attr] = getTranslationByKey(base[attr]);
         }
       });
-      if (!["ghost", "hull"].includes(playbook)) {
-        playbookData[playbook].friend = [...Array(5).keys()]
+      if (!["ghost", "hull"].includes(archetype)) {
+        archetypeData[archetype].friend = [...Array(5).keys()]
           .map(i => ({
-            name: getTranslationByKey(`playbook_${playbook}_friend_${i}`)
+            name: getTranslationByKey(`archetype_${archetype}_friend_${i}`)
           }))
           .filter(o => o.name);
-      } else playbookData[playbook].friend = [];
-      playbookData[playbook].ability = playbookData[playbook].ability
+      } else archetypeData[archetype].friend = [];
+      archetypeData[archetype].ability = archetypeData[archetype].ability
         .map(name => ({
-          name: getTranslationByKey(`playbook_ability_${name}`),
+          name: getTranslationByKey(`archetype_ability_${name}`),
           description:
-            getTranslationByKey(`playbook_ability_${name}_description`)
+            getTranslationByKey(`archetype_ability_${name}_description`)
         }));
-      if (spiritPlaybooks.includes(playbook)) {
-        playbookData[playbook].ability[0].check = "1";
+      if (spiritArchetypes.includes(archetype)) {
+        archetypeData[archetype].ability[0].check = "1";
       }
-      playbookData[playbook].playbookitem.forEach(item => {
+      archetypeData[archetype].archetypeitem.forEach(item => {
         item.name = getTranslationByKey(item.name);
         item.boxes_chosen = "1";
       });
     });
-    const playbookAbilityMap = new Map([
-      ...Object.values(playbookData).map(x => x.ability).reduce((m, v) => {
+    const archetypeAbilityMap = new Map([
+      ...Object.values(archetypeData).map(x => x.ability).reduce((m, v) => {
         v.forEach(a => m.add(a));
         return m;
       }, new Set())].map(x => {
@@ -3204,10 +3204,10 @@
       return [x.name.toLowerCase(), x.description];
     }));
     [
-      crewData, playbookData, factionsData, actionData, traumaData, itemData,
-      translatedDefaults, defaultValues, spiritPlaybooks, alchemicalData,
+      crewData, archetypeData, factionsData, actionData, traumaData, itemData,
+      translatedDefaults, defaultValues, spiritArchetypes, alchemicalData,
     ].forEach(x => Object.freeze(x));
-    return [playbookAbilityMap, crewAbilityMap];
+    return [archetypeAbilityMap, crewAbilityMap];
   }
 
   function mySetAttrs(attrs, options, callback) {
@@ -3431,9 +3431,9 @@
     if (match) setAttr("chat_image", `${match[1]}/thumb.${match[2]}`);
   }
 
-  function handlePlaybookFill(event) {
+  function handleArchetypeFill(event) {
     getAttrs([
-      "playbook",
+      "archetype",
       "crew_type",
       "changed_attributes",
       "setting_autofill",
@@ -3441,16 +3441,16 @@
     ], v => {
       const changedAttributes = (v.changed_attributes || "").split(",");
       const sourceName = translatedNames[
-        (event.sourceAttribute === "crew_type" ? v.crew_type : v.playbook)
+        (event.sourceAttribute === "crew_type" ? v.crew_type : v.archetype)
           .toLowerCase()];
       const fillBaseData = (data, defaultAttrNames) => {
         if (data) {
           const finalSettings = defaultAttrNames
             .filter(name => !changedAttributes.includes(name))
             // do not reset attributes which have been changed by the user
-            .filter(name => !spiritPlaybooks.includes(sourceName) ||
+            .filter(name => !spiritArchetypes.includes(sourceName) ||
               !actionsFlat.includes(name))
-            // do not reset action dots if changing to a spirit playbook
+            // do not reset action dots if changing to a spirit archetype
             .filter(name => v[name] !== (defaultValues[name] || ""))
             // do not set attributes if current value is equal to sheet defaults
             .reduce((m, name) => {
@@ -3462,8 +3462,8 @@
           mySetAttrs(finalSettings);
         }
       };
-      if (event.sourceAttribute === "crew_type" ? v.crew_type : v.playbook) {
-        setAttr("show_playbook_reminder", "0");
+      if (event.sourceAttribute === "crew_type" ? v.crew_type : v.archetype) {
+        setAttr("show_archetype_reminder", "0");
       }
       if (v.setting_autofill !== "1") return;
       if (event.sourceAttribute === "crew_type" && sourceName in crewData) {
@@ -3475,14 +3475,14 @@
           crewData[sourceName].upgrade, true);
         fillBaseData(crewData[sourceName].base, crewAttributes);
       }
-      if (event.sourceAttribute === "playbook" && sourceName in playbookData) {
+      if (event.sourceAttribute === "archetype" && sourceName in archetypeData) {
         fillRepeatingSectionFromData("friend",
-          playbookData[sourceName].friend, true);
+          archetypeData[sourceName].friend, true);
         fillRepeatingSectionFromData("ability",
-          playbookData[sourceName].ability, true);
-        fillRepeatingSectionFromData("playbookitem",
-          playbookData[sourceName].playbookitem, true);
-        fillBaseData(playbookData[sourceName].base, playbookAttributes);
+          archetypeData[sourceName].ability, true);
+        fillRepeatingSectionFromData("archetypeitem",
+          archetypeData[sourceName].archetypeitem, true);
+        fillBaseData(archetypeData[sourceName].base, archetypeAttributes);
         if (sourceName === "nerd" || sourceName === "zindiq") {
           fillRepeatingSectionFromData("alchemical", alchemicalData);
         }
@@ -3547,7 +3547,7 @@
         "generate_source_crew",
         "sheet_type"
       ], v => {
-        const data = (v.sheet_type === "character") ? playbookData : crewData,
+        const data = (v.sheet_type === "character") ? archetypeData : crewData,
           genSource = v[`generate_source_${v.sheet_type}`];
         if (genSource in data) {
           emptyFirstRowIfUnnamed(sectionName);
@@ -3559,13 +3559,13 @@
   }
 
   function handleSheetInit() {
-    getAttrs(["sheet_type", "crew_type", "playbook"], v => {
+    getAttrs(["sheet_type", "crew_type", "archetype"], v => {
       /* Make sure sheet_type is never 0 */
       if (!["crew", "faction"].includes(v.sheet_type)) {
         setAttr("sheet_type", "character");
       }
-      /* Remove reminder box if we have playbook or crew name */
-      if (v.playbook || v.crew_type) setAttr("show_playbook_reminder", "0");
+      /* Remove reminder box if we have archetype or crew name */
+      if (v.archetype || v.crew_type) setAttr("show_archetype_reminder", "0");
     });
     /* Setup and upgrades */
     getAttrs(["version"], v => {
@@ -3598,7 +3598,7 @@
           "friend",
           "crewability",
           "contact",
-          "playbookitem",
+          "archetypeitem",
           "upgrade",
           "framefeature"
         ].reduce((memo, sectionName) => {
@@ -3665,7 +3665,7 @@
       });
     };
     setAttr("load", 0);
-    ["item", "playbookitem"].forEach(clearChecks);
+    ["item", "archetypeitem"].forEach(clearChecks);
   }
 
   function setupTranslatedAttrs() {
@@ -4300,151 +4300,151 @@
       }]
     }
   };
-  const playbookData = {
+  const archetypeData = {
     jock: {
       ability: ["battleborn", "bodyguard", "ghost_fighter", "leader", "mule", "not_to_be_trifled_with", "savage", "vigorous", "veteran"],
       base: {
         command: "1",
-        friends_title: "playbook_jock_friends_title",
+        friends_title: "archetype_jock_friends_title",
         gatherinfo1: "gatherinfo_how_can_I_hurt",
         gatherinfo2: "gatherinfo_whos_most_afraid",
         gatherinfo3: "gatherinfo_whos_most_dangerous",
         gatherinfo4: "gatherinfo_what_do_they_intend",
         gatherinfo5: "gatherinfo_how_can_I_get_them",
         gatherinfo6: "gatherinfo_are_they_telling",
-        playbook_description: "playbook_jock_description",
+        archetype_description: "archetype_jock_description",
         skirmish: "2",
-        xp_condition: "playbook_jock_xp_condition"
+        xp_condition: "archetype_jock_xp_condition"
       },
-      playbookitem: [{
+      archetypeitem: [{
         bold: "1",
-        name: "playbook_item_fine_hand_weapon",
+        name: "archetype_item_fine_hand_weapon",
         numboxes: "1"
       }, {
         bold: "1",
-        name: "playbook_item_fine_heavy_weapon",
+        name: "archetype_item_fine_heavy_weapon",
         numboxes: "2"
       }, {
-        name: "playbook_item_scary_weapon_or_tool",
+        name: "archetype_item_scary_weapon_or_tool",
         numboxes: "1"
       }, {
-        name: "playbook_item_manacles_&_chain",
+        name: "archetype_item_manacles_&_chain",
         numboxes: "0"
       }, {
-        name: "playbook_item_rage_essence_vial",
+        name: "archetype_item_rage_essence_vial",
         numboxes: "0"
       }, {
-        name: "playbook_item_spiritbane_charm",
+        name: "archetype_item_spiritbane_charm",
         numboxes: "0"
       }]
     },
     faris: {
       ability: ["leader", "ambitious", "battleborn", "expertise", "ghost_legion", "the_tiger's_fury", "vigorous", "veteran"],
       base: {
-        char_cohort_name: "playbook_item_entourage",
+        char_cohort_name: "archetype_item_entourage",
         char_cohort_quality: "0",
         char_cohort_type: "gang",
         char_cohort_subtype: "thugs",
         command: "2",
-        friends_title: "playbook_faris_friends_title",
+        friends_title: "archetype_faris_friends_title",
         gatherinfo1: "gatherinfo_are_they_telling",
         gatherinfo2: "gatherinfo_how_can_I_get_them",
         gatherinfo3: "gatherinfo_what_do_they_really",
         gatherinfo4: "gatherinfo_what_should_I_look",
         gatherinfo5: "gatherinfo_where_they_vulnerable",
         gatherinfo6: "gatherinfo_whos_most_afraid",
-        playbook_description: "playbook_faris_description",
+        archetype_description: "archetype_faris_description",
         setting_show_cohort: "1",
         skirmish: "1",
-        xp_condition: "playbook_faris_xp_condition"
+        xp_condition: "archetype_faris_xp_condition"
       },
-      playbookitem: [{
+      archetypeitem: [{
         bold: "1",
-        name: "playbook_item_fine_heavy_weapon",
+        name: "archetype_item_fine_heavy_weapon",
         numboxes: "2"
       }, {
         bold: "1",
-        name: "playbook_item_fine_pair_of_handguns",
+        name: "archetype_item_fine_pair_of_handguns",
         numboxes: "1"
       }, {
         bold: "1",
-        name: "playbook_item_fine_uniform",
+        name: "archetype_item_fine_uniform",
         numboxes: "0"
       }, {
-        name: "playbook_item_a_cane-sword",
+        name: "archetype_item_a_cane-sword",
         numboxes: "1"
       }, {
-        name: "playbook_item_entourage",
+        name: "archetype_item_entourage",
         numboxes: "0"
       }, {
-        name: "playbook_item_spiritbane_charm",
+        name: "archetype_item_spiritbane_charm",
         numboxes: "0"
       }]
     },
     forger: {
       ability: ["artificer", "analyst", "connected", "ghost_in_the_machine", "a_little_something_on_the_side", "machinist", "saboteur", "strange_methods", "veteran"],
       base: {
-        friends_title: "playbook_forger_friends_title",
+        friends_title: "archetype_forger_friends_title",
         gatherinfo1: "gatherinfo_how_can_I_get_them",
         gatherinfo2: "gatherinfo_what_are_they_really",
         gatherinfo3: "gatherinfo_what_can_I_tinker",
         gatherinfo4: "gatherinfo_what_do_they_intend",
         gatherinfo5: "gatherinfo_what_do_they_want",
         gatherinfo6: "gatherinfo_what_is_hidden",
-        playbook_description: "playbook_forger_description",
+        archetype_description: "archetype_forger_description",
         study: "1",
         tinker: "2",
-        xp_condition: "playbook_forger_xp_condition"
+        xp_condition: "archetype_forger_xp_condition"
       },
-      playbookitem: [{
+      archetypeitem: [{
         bold: "1",
-        name: "playbook_item_fine_tinkering_tools",
+        name: "archetype_item_fine_tinkering_tools",
         numboxes: "1"
       }, {
-        name: "playbook_item_electroplasm_vials",
+        name: "archetype_item_electroplasm_vials",
         numboxes: "0"
       }, {
-        name: "playbook_item_forged_documents",
+        name: "archetype_item_forged_documents",
         numboxes: "0"
       }, {
-        name: "playbook_item_protective_suit",
+        name: "archetype_item_protective_suit",
         numboxes: "1"
       }, {
-        name: "playbook_item_silence_potion_vial",
+        name: "archetype_item_silence_potion_vial",
         numboxes: "0"
       }, {
-        name: "playbook_item_gadget",
+        name: "archetype_item_gadget",
         numboxes: "1"
       }]
     },
     ghost: {
       ability: ["ghost_form", "dissipate", "manifest", "poltergeist", "possess", "veteran"],
       base: {
-        friends_title: "playbook_ghost_friends_title",
+        friends_title: "archetype_ghost_friends_title",
         gatherinfo1: "gatherinfo_what_do_they_intend",
         gatherinfo2: "gatherinfo_how_can_I_get_them",
         gatherinfo3: "gatherinfo_what_are_they_really",
         gatherinfo4: "gatherinfo_what_should_I_look",
         gatherinfo5: "gatherinfo_wheres_the_weakness",
         gatherinfo6: "gatherinfo_how_can_I_find",
-        playbook_description: "playbook_ghost_description",
+        archetype_description: "archetype_ghost_description",
         setting_stress_label: "drain",
         setting_trauma_label: "gloom",
         setting_traumata_set: "ghost",
         setting_vice_type: "ghost",
         special_abilities_title: "ghost_traits",
-        xp_condition: "playbook_ghost_xp_condition",
-        xp_condition2: "playbook_ghost_xp_condition2",
-        xp_condition3: "playbook_ghost_xp_condition3"
+        xp_condition: "archetype_ghost_xp_condition",
+        xp_condition2: "archetype_ghost_xp_condition2",
+        xp_condition3: "archetype_ghost_xp_condition3"
       },
-      playbookitem: []
+      archetypeitem: []
     },
     hick: {
       ability: ["sharpshooter", "focused", "ghost_hunter", "scout", "survivor", "tough_as_nails", "vengeful", "veteran"],
       base: {
         char_cohort_name: "hunting_pet",
         char_cohort_subtype: "hunter",
-        friends_title: "playbook_hick_friends_title",
+        friends_title: "archetype_hick_friends_title",
         gatherinfo1: "gatherinfo_what_do_they_intend",
         gatherinfo2: "gatherinfo_how_can_I_get_them",
         gatherinfo3: "gatherinfo_what_are_they_really",
@@ -4452,30 +4452,30 @@
         gatherinfo5: "gatherinfo_where_did_x_go",
         gatherinfo6: "gatherinfo_how_can_I_find",
         hunt: "2",
-        playbook_description: "playbook_hick_description",
+        archetype_description: "archetype_hick_description",
         setting_show_cohort: "1",
         survey: "1",
-        xp_condition: "playbook_hick_xp_condition"
+        xp_condition: "archetype_hick_xp_condition"
       },
-      playbookitem: [{
+      archetypeitem: [{
         bold: "1",
-        name: "playbook_item_fine_pair_of_handguns",
+        name: "archetype_item_fine_pair_of_handguns",
         numboxes: "1"
       }, {
         bold: "1",
-        name: "playbook_item_fine_long_rifle",
+        name: "archetype_item_fine_long_rifle",
         numboxes: "2"
       }, {
-        name: "playbook_item_electroplasmic_ammunition",
+        name: "archetype_item_electroplasmic_ammunition",
         numboxes: "1"
       }, {
-        name: "playbook_item_a_trained_hunting_pet",
+        name: "archetype_item_a_trained_hunting_pet",
         numboxes: "0"
       }, {
-        name: "playbook_item_spyglass",
+        name: "archetype_item_spyglass",
         numboxes: "1"
       }, {
-        name: "playbook_item_spiritbane_charm",
+        name: "archetype_item_spiritbane_charm",
         numboxes: "0"
       }]
     },
@@ -4488,7 +4488,7 @@
         gatherinfo4: "gatherinfo_what_should_I_look",
         gatherinfo5: "gatherinfo_wheres_the_weakness",
         gatherinfo6: "gatherinfo_how_can_I_find",
-        playbook_description: "playbook_hull_description",
+        archetype_description: "archetype_hull_description",
         setting_load_h: "7",
         setting_extra_stress: "1",
         setting_show_frame: "1",
@@ -4497,91 +4497,91 @@
         setting_traumata_set: "hull",
         setting_vice_type: "hull",
         special_abilities_title: "hull_traits",
-        xp_condition: "playbook_hull_xp_condition",
-        xp_condition2: "playbook_hull_xp_condition2",
-        xp_condition3: "playbook_hull_xp_condition3"
+        xp_condition: "archetype_hull_xp_condition",
+        xp_condition2: "archetype_hull_xp_condition2",
+        xp_condition3: "archetype_hull_xp_condition3"
       },
-      playbookitem: []
+      archetypeitem: []
     },
     janissary: {
       ability: ["bodyguard", "ghost_fighter", "mule", "physicker", "security", "sending_a_message", "strategic_retreat", "tough_as_nails", "veteran"],
       base: {
-        friends_title: "playbook_janissary_friends_title",
+        friends_title: "archetype_janissary_friends_title",
         gatherinfo1: "gatherinfo_how_can_I_find",
         gatherinfo2: "gatherinfo_what_are_they_really",
         gatherinfo3: "gatherinfo_what_do_they_intend",
         gatherinfo4: "gatherinfo_what_should_I_look",
         gatherinfo5: "gatherinfo_whats_the_best_way",
         gatherinfo6: "gatherinfo_whos_most_dangerous",
-        playbook_description: "playbook_janissary_description",
+        archetype_description: "archetype_janissary_description",
         skirmish: "1",
         survey: "2",
-        xp_condition: "playbook_janissary_xp_condition"
+        xp_condition: "archetype_janissary_xp_condition"
       },
-      playbookitem: [{
+      archetypeitem: [{
         bold: "1",
-        name: "playbook_item_fine_hand_weapon",
+        name: "archetype_item_fine_hand_weapon",
         numboxes: "1"
       }, {
         bold: "1",
-        name: "playbook_item_fine_long_rifle",
+        name: "archetype_item_fine_long_rifle",
         numboxes: "2"
       }, {
-        name: "playbook_item_electroplasmic_ammunition",
+        name: "archetype_item_electroplasmic_ammunition",
         numboxes: "1"
       }, {
-        name: "playbook_item_manacles_&_chain",
+        name: "archetype_item_manacles_&_chain",
         numboxes: "0"
       }, {
-        name: "playbook_item_spiritbane_charm",
+        name: "archetype_item_spiritbane_charm",
         numboxes: "0"
       }, {
-        name: "playbook_item_spyglass",
+        name: "archetype_item_spyglass",
         numboxes: "1"
       }]
     },
     nerd: {
       ability: ["alchemist", "analyst", "artificer", "fortitude", "ghost_ward", "physicker", "saboteur", "venomous", "veteran"],
       base: {
-        friends_title: "playbook_nerd_friends_title",
+        friends_title: "archetype_nerd_friends_title",
         gatherinfo1: "gatherinfo_what_do_they_intend",
         gatherinfo2: "gatherinfo_how_can_I_get_them",
         gatherinfo3: "gatherinfo_are_they_telling",
         gatherinfo4: "gatherinfo_what_can_I_tinker",
         gatherinfo5: "gatherinfo_what_might_happen",
         gatherinfo6: "gatherinfo_how_can_I_find",
-        playbook_description: "playbook_nerd_description",
+        archetype_description: "archetype_nerd_description",
         setting_show_bandolier: "1",
         tinker: "2",
         wreck: "1",
-        xp_condition: "playbook_nerd_xp_condition"
+        xp_condition: "archetype_nerd_xp_condition"
       },
-      playbookitem: [{
+      archetypeitem: [{
         bold: "1",
-        name: "playbook_item_fine_tinkering_tools",
+        name: "archetype_item_fine_tinkering_tools",
         numboxes: "1"
       }, {
         bold: "1",
-        name: "playbook_item_fine_wrecking_tools",
+        name: "archetype_item_fine_wrecking_tools",
         numboxes: "2"
       }, {
-        name: "playbook_item_blowgun_&_darts,_syringes",
+        name: "archetype_item_blowgun_&_darts,_syringes",
         numboxes: "0"
       }, {
-        name: "playbook_item_bandolier_of_alchemicals_(3)",
+        name: "archetype_item_bandolier_of_alchemicals_(3)",
         numboxes: "1"
       }, {
-        name: "playbook_item_bandolier_of_alchemicals_(3)",
+        name: "archetype_item_bandolier_of_alchemicals_(3)",
         numboxes: "1"
       }, {
-        name: "playbook_item_gadget",
+        name: "archetype_item_gadget",
         numboxes: "1"
       }]
     },
     goth: {
       ability: ["infiltrator", "ambush", "daredevil", "the_devil's_footsteps", "expertise", "ghost_veil", "reflexes", "shadow", "veteran"],
       base: {
-        friends_title: "playbook_goth_friends_title",
+        friends_title: "archetype_goth_friends_title",
         finesse: "1",
         gatherinfo1: "gatherinfo_what_do_they_intend",
         gatherinfo2: "gatherinfo_how_can_I_get_them",
@@ -4589,29 +4589,29 @@
         gatherinfo4: "gatherinfo_whats_the_best_way",
         gatherinfo5: "gatherinfo_where_can_I_hide",
         gatherinfo6: "gatherinfo_how_can_I_find",
-        playbook_description: "playbook_goth_description",
+        archetype_description: "archetype_goth_description",
         prowl: "2",
-        xp_condition: "playbook_goth_xp_condition"
+        xp_condition: "archetype_goth_xp_condition"
       },
-      playbookitem: [{
+      archetypeitem: [{
         bold: "1",
-        name: "playbook_item_fine_lockpicks",
+        name: "archetype_item_fine_lockpicks",
         numboxes: "0"
       }, {
         bold: "1",
-        name: "playbook_item_fine_shadow_cloak",
+        name: "archetype_item_fine_shadow_cloak",
         numboxes: "1"
       }, {
-        name: "playbook_item_light_climbing_gear",
+        name: "archetype_item_light_climbing_gear",
         numboxes: "1"
       }, {
-        name: "playbook_item_silence_potion_vial",
+        name: "archetype_item_silence_potion_vial",
         numboxes: "0"
       }, {
-        name: "playbook_item_dark-sight_goggles",
+        name: "archetype_item_dark-sight_goggles",
         numboxes: "1"
       }, {
-        name: "playbook_item_spiritbane_charm",
+        name: "archetype_item_spiritbane_charm",
         numboxes: "0"
       }]
     },
@@ -4620,75 +4620,75 @@
       base: {
         attune: "1",
         finesse: "2",
-        friends_title: "playbook_mirage_friends_title",
+        friends_title: "archetype_mirage_friends_title",
         gatherinfo1: "gatherinfo_how_can_I_get_them",
         gatherinfo2: "gatherinfo_what_are_they_really",
         gatherinfo3: "gatherinfo_what_can_I_tinker",
         gatherinfo4: "gatherinfo_what_do_they_intend",
         gatherinfo5: "gatherinfo_what_do_they_want",
         gatherinfo6: "gatherinfo_what_is_hidden",
-        playbook_description: "playbook_mirage_description",
-        xp_condition: "playbook_mirage_xp_condition"
+        archetype_description: "archetype_mirage_description",
+        xp_condition: "archetype_mirage_xp_condition"
       },
-      playbookitem: [{
+      archetypeitem: [{
         bold: "1",
-        name: "playbook_item_fine_cover_identity",
+        name: "archetype_item_fine_cover_identity",
         numboxes: "0"
       }, {
         bold: "1",
-        name: "playbook_item_fine_disguise_kit",
+        name: "archetype_item_fine_disguise_kit",
         numboxes: "1"
       }, {
         bold: "1",
-        name: "playbook_item_fine_loaded_dice,_trick_cards",
+        name: "archetype_item_fine_loaded_dice,_trick_cards",
         numboxes: "0"
       }, {
-        name: "playbook_item_ghost_key",
+        name: "archetype_item_ghost_key",
         numboxes: "0"
       }, {
-        name: "playbook_item_spiritbane_charm",
+        name: "archetype_item_spiritbane_charm",
         numboxes: "0"
       }, {
-        name: "playbook_item_trance_powder",
+        name: "archetype_item_trance_powder",
         numboxes: "0"
       }]
     },
     rafiq: {
       ability: ["eye_for_weakness", "cut-out", "functioning_vice", "ghost_friend", "hypnotic", "occultist", "trust_in_me", "veteran"],
       base: {
-        char_cohort_name: "playbook_item_a_special_friend",
+        char_cohort_name: "archetype_item_a_special_friend",
         consort: "2",
-        friends_title: "playbook_rafiq_friends_title",
+        friends_title: "archetype_rafiq_friends_title",
         gatherinfo1: "gatherinfo_are_they_telling",
         gatherinfo2: "gatherinfo_how_can_I_blend",
         gatherinfo3: "gatherinfo_how_can_I_get_them",
         gatherinfo4: "gatherinfo_what_are_they_really",
         gatherinfo5: "gatherinfo_what_do_they_want",
         gatherinfo6: "gatherinfo_where_they_vulnerable",
-        playbook_description: "playbook_rafiq_description",
+        archetype_description: "archetype_rafiq_description",
         setting_show_cohort: "1",
         sway: "1",
-        xp_condition: "playbook_rafiq_xp_condition"
+        xp_condition: "archetype_rafiq_xp_condition"
       },
-      playbookitem: [{
+      archetypeitem: [{
         bold: "1",
-        name: "playbook_item_fine_bottle_of_whiskey",
+        name: "archetype_item_fine_bottle_of_whiskey",
         numboxes: "1"
       }, {
         bold: "1",
-        name: "playbook_item_fine_clothes_&_jewelry",
+        name: "archetype_item_fine_clothes_&_jewelry",
         numboxes: "0"
       }, {
-        name: "playbook_item_black_lotus_resin",
+        name: "archetype_item_black_lotus_resin",
         numboxes: "0"
       }, {
-        name: "playbook_item_concealed_palm_handgun",
+        name: "archetype_item_concealed_palm_handgun",
         numboxes: "0"
       }, {
-        name: "playbook_item_a_special_friend",
+        name: "archetype_item_a_special_friend",
         numboxes: "0"
       }, {
-        name: "playbook_item_spiritbane_charm",
+        name: "archetype_item_spiritbane_charm",
         numboxes: "0"
       }]
     },
@@ -4697,7 +4697,7 @@
       base: {
         char_cohort_name: "hunting_pet",
         char_cohort_subtype: "hunter",
-        friends_title: "playbook_rakshasa_friends_title",
+        friends_title: "archetype_rakshasa_friends_title",
         gatherinfo1: "gatherinfo_how_can_I_find",
         gatherinfo2: "gatherinfo_what_drives_them",
         gatherinfo3: "gatherinfo_whats_the_best_way",
@@ -4705,36 +4705,36 @@
         gatherinfo5: "gatherinfo_where_can_I_hide",
         gatherinfo6: "gatherinfo_where_did_x_go",
         hunt: "1",
-        playbook_description: "playbook_rakshasa_description",
+        archetype_description: "archetype_rakshasa_description",
         prowl: "2",
         setting_show_cohort: "1",
-        xp_condition: "playbook_rakshasa_xp_condition"
+        xp_condition: "archetype_rakshasa_xp_condition"
       },
-      playbookitem: [{
+      archetypeitem: [{
         bold: "1",
-        name: "playbook_item_fine_shadow_cloak",
+        name: "archetype_item_fine_shadow_cloak",
         numboxes: "1"
       }, {
-        name: "playbook_item_dark-sight_goggles",
+        name: "archetype_item_dark-sight_goggles",
         numboxes: "1"
       }, {
-        name: "playbook_item_light_climbing_gear",
+        name: "archetype_item_light_climbing_gear",
         numboxes: "1"
       }, {
-        name: "playbook_item_scary_weapon_or_tool",
+        name: "archetype_item_scary_weapon_or_tool",
         numboxes: "1"
       }, {
-        name: "playbook_item_spiritbane_charm",
+        name: "archetype_item_spiritbane_charm",
         numboxes: "0"
       }, {
-        name: "playbook_item_a_trained_hunting_pet",
+        name: "archetype_item_a_trained_hunting_pet",
         numboxes: "0"
       }]
     },
     prep: {
       ability: ["rook's_gambit", "cloak_&_dagger", "ghost_voice", "like_looking_into_a_mirror", "a_little_something_on_the_side", "mesmerism", "subterfuge", "trust_in_me", "veteran"],
       base: {
-        friends_title: "playbook_prep_friends_title",
+        friends_title: "archetype_prep_friends_title",
         consort: "1",
         gatherinfo1: "gatherinfo_what_do_they_intend",
         gatherinfo2: "gatherinfo_how_can_I_get_them",
@@ -4742,30 +4742,30 @@
         gatherinfo4: "gatherinfo_what_are_they_really",
         gatherinfo5: "gatherinfo_what_do_they_really",
         gatherinfo6: "gatherinfo_how_can_I_blend",
-        playbook_description: "playbook_prep_description",
+        archetype_description: "archetype_prep_description",
         sway: "2",
-        xp_condition: "playbook_prep_xp_condition"
+        xp_condition: "archetype_prep_xp_condition"
       },
-      playbookitem: [{
+      archetypeitem: [{
         bold: "1",
-        name: "playbook_item_fine_clothes_&_jewelry",
+        name: "archetype_item_fine_clothes_&_jewelry",
         numboxes: "0"
       }, {
         bold: "1",
-        name: "playbook_item_fine_disguise_kit",
+        name: "archetype_item_fine_disguise_kit",
         numboxes: "1"
       }, {
         bold: "1",
-        name: "playbook_item_fine_loaded_dice,_trick_cards",
+        name: "archetype_item_fine_loaded_dice,_trick_cards",
         numboxes: "0"
       }, {
-        name: "playbook_item_trance_powder",
+        name: "archetype_item_trance_powder",
         numboxes: "0"
       }, {
-        name: "playbook_item_a_cane-sword",
+        name: "archetype_item_a_cane-sword",
         numboxes: "1"
       }, {
-        name: "playbook_item_spiritbane_charm",
+        name: "archetype_item_spiritbane_charm",
         numboxes: "0"
       }]
     },
@@ -4773,50 +4773,50 @@
       ability: ["foresight", "calculating", "connected", "functioning_vice", "ghost_contract", "jail_bird", "mastermind", "weaving_the_web", "veteran"],
       base: {
         consort: "2",
-        friends_title: "playbook_theater_friends_title",
+        friends_title: "archetype_theater_friends_title",
         gatherinfo1: "gatherinfo_what_do_they_want",
         gatherinfo2: "gatherinfo_what_should_I_look",
         gatherinfo3: "gatherinfo_wheres_the_leverage",
         gatherinfo4: "gatherinfo_how_can_I_discover",
         gatherinfo5: "gatherinfo_what_do_they_intend",
         gatherinfo6: "gatherinfo_how_can_I_get_them",
-        playbook_description: "playbook_theater_description",
+        archetype_description: "archetype_theater_description",
         study: "1",
-        xp_condition: "playbook_theater_xp_condition"
+        xp_condition: "archetype_theater_xp_condition"
       },
-      playbookitem: [{
+      archetypeitem: [{
         bold: "1",
-        name: "playbook_item_fine_cover_identity",
+        name: "archetype_item_fine_cover_identity",
         numboxes: "0"
       }, {
         bold: "1",
-        name: "playbook_item_fine_bottle_of_whiskey",
+        name: "archetype_item_fine_bottle_of_whiskey",
         numboxes: "1"
       }, {
-        name: "playbook_item_blueprints",
+        name: "archetype_item_blueprints",
         numboxes: "1"
       }, {
-        name: "playbook_item_vial_of_slumber_essence",
+        name: "archetype_item_vial_of_slumber_essence",
         numboxes: "0"
       }, {
-        name: "playbook_item_concealed_palm_handgun",
+        name: "archetype_item_concealed_palm_handgun",
         numboxes: "0"
       }, {
-        name: "playbook_item_spiritbane_charm",
+        name: "archetype_item_spiritbane_charm",
         numboxes: "0"
       }]
     },
     vampire: {
       ability: ["undead", "terrible_power", "arcane_sight", "a_void_in_the_echo", "dark_talent", "sinister_guile", "veteran"],
       base: {
-        friends_title: "playbook_vampire_friends_title",
+        friends_title: "archetype_vampire_friends_title",
         gatherinfo1: "gatherinfo_what_do_they_intend",
         gatherinfo2: "gatherinfo_how_can_I_get_them",
         gatherinfo3: "gatherinfo_what_are_they_really",
         gatherinfo4: "gatherinfo_what_should_I_look",
         gatherinfo5: "gatherinfo_wheres_the_weakness",
         gatherinfo6: "gatherinfo_how_can_I_find",
-        playbook_description: "playbook_vampire_description",
+        archetype_description: "archetype_vampire_description",
         setting_extra_stress: "3",
         setting_traumata_set: "vampire",
         setting_vampirexp: "1",
@@ -4824,27 +4824,27 @@
         setting_vice_type: "vampire",
         special_abilities_title: "vampire_traits",
         trauma: "4",
-        xp_condition: "playbook_vampire_xp_condition",
-        xp_condition2: "playbook_vampire_xp_condition2",
-        xp_condition3: "playbook_vampire_xp_condition3"
+        xp_condition: "archetype_vampire_xp_condition",
+        xp_condition2: "archetype_vampire_xp_condition2",
+        xp_condition3: "archetype_vampire_xp_condition3"
       },
-      playbookitem: [{
+      archetypeitem: [{
         bold: "1",
-        name: "playbook_item_fine_clothes_and_accoutrements",
+        name: "archetype_item_fine_clothes_and_accoutrements",
         numboxes: "0"
       }, {
         bold: "1",
-        name: "playbook_item_fine_personal_weapon",
+        name: "archetype_item_fine_personal_weapon",
         numboxes: "1"
       }, {
         bold: "1",
-        name: "playbook_item_fine_shadow_cloak",
+        name: "archetype_item_fine_shadow_cloak",
         numboxes: "1"
       }, {
-        name: "playbook_item_demonbane_charm",
+        name: "archetype_item_demonbane_charm",
         numboxes: "0"
       }, {
-        name: "playbook_item_spiritbane_charm",
+        name: "archetype_item_spiritbane_charm",
         numboxes: "0"
       }]
     },
@@ -4852,36 +4852,36 @@
       ability: ["red_right_hand", "calculating", "compel", "ghost_mind", "like_looking_into_a_mirror", "prepared", "reflexes", "ritual", "veteran"],
       base: {
         attune: "1",
-        friends_title: "playbook_vizier_friends_title",
+        friends_title: "archetype_vizier_friends_title",
         gatherinfo1: "gatherinfo_are_they_telling",
         gatherinfo2: "gatherinfo_how_can_I_discover",
         gatherinfo3: "gatherinfo_what_do_they_intend",
         gatherinfo4: "gatherinfo_what_might_happen",
         gatherinfo5: "gatherinfo_where_they_vulnerable",
         gatherinfo6: "gatherinfo_wheres_the_leverage",
-        playbook_description: "playbook_vizier_description",
+        archetype_description: "archetype_vizier_description",
         study: "2",
-        xp_condition: "playbook_vizier_xp_condition"
+        xp_condition: "archetype_vizier_xp_condition"
       },
-      playbookitem: [{
+      archetypeitem: [{
         bold: "1",
-        name: "playbook_item_fine_lightning_hook",
+        name: "archetype_item_fine_lightning_hook",
         numboxes: "1"
       }, {
         bold: "1",
-        name: "playbook_item_fine_spirit_mask",
+        name: "archetype_item_fine_spirit_mask",
         numboxes: "1"
       }, {
-        name: "playbook_item_demonbane_charm",
+        name: "archetype_item_demonbane_charm",
         numboxes: "0"
       }, {
-        name: "playbook_item_electroplasm_vials",
+        name: "archetype_item_electroplasm_vials",
         numboxes: "0"
       }, {
-        name: "playbook_item_spirit_bottles_(2)",
+        name: "archetype_item_spirit_bottles_(2)",
         numboxes: "1"
       }, {
-        name: "playbook_item_rare_book",
+        name: "archetype_item_rare_book",
         numboxes: "1"
       }]
     },
@@ -4889,74 +4889,74 @@
       ability: ["compel", "ghost_mind", "iron_will", "occultist", "ritual", "strange_methods", "tempest", "warded", "veteran"],
       base: {
         attune: "2",
-        friends_title: "playbook_weird_friends_title",
+        friends_title: "archetype_weird_friends_title",
         gatherinfo1: "gatherinfo_what_is_arcane",
         gatherinfo2: "gatherinfo_what_echoes",
         gatherinfo3: "gatherinfo_what_is_hidden",
         gatherinfo4: "gatherinfo_what_do_they_intend",
         gatherinfo5: "gatherinfo_what_drives_them",
         gatherinfo6: "gatherinfo_how_can_I_reveal",
-        playbook_description: "playbook_weird_description",
+        archetype_description: "archetype_weird_description",
         study: "1",
-        xp_condition: "playbook_weird_xp_condition"
+        xp_condition: "archetype_weird_xp_condition"
       },
-      playbookitem: [{
+      archetypeitem: [{
         bold: "1",
-        name: "playbook_item_fine_lightning_hook",
+        name: "archetype_item_fine_lightning_hook",
         numboxes: "1"
       }, {
         bold: "1",
-        name: "playbook_item_fine_spirit_mask",
+        name: "archetype_item_fine_spirit_mask",
         numboxes: "1"
       }, {
-        name: "playbook_item_electroplasm_vials",
+        name: "archetype_item_electroplasm_vials",
         numboxes: "0"
       }, {
-        name: "playbook_item_spirit_bottles_(2)",
+        name: "archetype_item_spirit_bottles_(2)",
         numboxes: "1"
       }, {
-        name: "playbook_item_ghost_key",
+        name: "archetype_item_ghost_key",
         numboxes: "0"
       }, {
-        name: "playbook_item_demonbane_charm",
+        name: "archetype_item_demonbane_charm",
         numboxes: "0"
       }]
     },
     zindiq: {
       ability: ["driven", "alchemist", "ghost_ward", "infiltrator", "mesmerism", "pyromancer", "revolutionary", "underworld_contacts"],
       base: {
-        friends_title: "playbook_zindiq_friends_title",
+        friends_title: "archetype_zindiq_friends_title",
         gatherinfo1: "gatherinfo_how_can_I_hurt",
         gatherinfo2: "gatherinfo_how_can_I_reveal",
         gatherinfo3: "gatherinfo_what_can_I_tinker",
         gatherinfo4: "gatherinfo_what_echoes",
         gatherinfo5: "gatherinfo_what_is_arcane",
         gatherinfo6: "gatherinfo_wheres_the_weakness",
-        playbook_description: "playbook_zindiq_description",
+        archetype_description: "archetype_zindiq_description",
         setting_show_bandolier: "1",
         sway: "1",
         wreck: "2",
-        xp_condition: "playbook_zindiq_xp_condition"
+        xp_condition: "archetype_zindiq_xp_condition"
       },
-      playbookitem: [{
+      archetypeitem: [{
         bold: "1",
-        name: "playbook_item_fine_cover_identity",
+        name: "archetype_item_fine_cover_identity",
         numboxes: "0"
       }, {
         bold: "1",
-        name: "playbook_item_fine_wrecking_tools",
+        name: "archetype_item_fine_wrecking_tools",
         numboxes: "2"
       }, {
-        name: "playbook_item_bandolier_of_alchemicals_(3)",
+        name: "archetype_item_bandolier_of_alchemicals_(3)",
         numboxes: "1"
       }, {
-        name: "playbook_item_bandolier_of_alchemicals_(3)",
+        name: "archetype_item_bandolier_of_alchemicals_(3)",
         numboxes: "1"
       }, {
-        name: "playbook_item_blueprints",
+        name: "archetype_item_blueprints",
         numboxes: "1"
       }, {
-        name: "playbook_item_spiritbane_charm",
+        name: "archetype_item_spiritbane_charm",
         numboxes: "0"
       }]
     }
@@ -5495,7 +5495,7 @@
     upgrade_carriage_check_1: "0",
     wreck: "0"
   };
-  const spiritPlaybooks = ["ghost", "hull", "vampire"];
+  const spiritArchetypes = ["ghost", "hull", "vampire"];
   const alchemicalData = [
     "alcahest",
     "binding_oil",
@@ -5513,16 +5513,16 @@
   ];
 
   /* PRE-COMPUTED CONSTANTS */
-  const [playbookAbilityMap, crewAbilityMap] = dataSetup();
+  const [archetypeAbilityMap, crewAbilityMap] = dataSetup();
   const crewAttributes = [...new Set(
     [].concat(...Object.keys(crewData).map(x => Object.keys(crewData[x].base)))
   )];
-  const playbookAttributes = [...new Set(
-    [].concat(...Object.keys(playbookData)
-      .map(x => Object.keys(playbookData[x].base)))
+  const archetypeAttributes = [...new Set(
+    [].concat(...Object.keys(archetypeData)
+      .map(x => Object.keys(archetypeData[x].base)))
   )];
   const watchedAttributes =
-    [...new Set(crewAttributes.concat(playbookAttributes))];
+    [...new Set(crewAttributes.concat(archetypeAttributes))];
   const actionsFlat =
     [].concat(...Object.keys(actionData).map(x => actionData[x]));
   const traumaDataFlat = Object.keys(traumaData)
@@ -5532,7 +5532,7 @@
     "repeating_ability:description",
     "repeating_crewability:name",
     "repeating_crewability:description",
-    "repeating_playbookitem:name",
+    "repeating_archetypeitem:name",
     "repeating_upgrade:name",
     "repeating_friend:name",
     "repeating_contact:name",
@@ -5552,7 +5552,7 @@
     "cohort1_edges",
     "cohort1_flaws",
     "sign",
-    "background",
+    "outlook",
     "vice_purveyor",
   ];
   const autogenSections = [
@@ -5560,11 +5560,11 @@
     "crewability",
     "friend",
     "contact",
-    "playbookitem",
+    "archetypeitem",
     "upgrade"
   ];
   const translatedNames = [
-    ...Object.keys(playbookData),
+    ...Object.keys(archetypeData),
     ...Object.keys(crewData)
   ].reduce((m, keyName) => {
     if (getTranslationByKey(keyName)) {
@@ -5574,11 +5574,11 @@
   }, {});
 
   /* EVENT HANDLERS */
-  /* Set default fields when setting crew type or playbook */
-  on("change:crew_type change:playbook", handlePlaybookFill);
+  /* Set default fields when setting crew type or archetype */
+  on("change:crew_type change:archetype", handleArchetypeFill);
   /* automatically fill abilities */
   on("change:repeating_ability:name",
-    () => fillAbility("repeating_ability", playbookAbilityMap));
+    () => fillAbility("repeating_ability", archetypeAbilityMap));
   on("change:repeating_crewability:name",
     () => fillAbility("repeating_crewability", crewAbilityMap));
   /* Watch repeating rows for changes and set autogen to false if it changes */
@@ -5627,7 +5627,7 @@
   handleBoxesFill("upgrade_mastery_check_", true);
   handleBoxesFill("bandolier1_check_");
   handleBoxesFill("bandolier2_check_");
-  ["item", "playbookitem", "upgrade"]
+  ["item", "archetypeitem", "upgrade"]
     .forEach(sName => handleBoxesFill(`repeating_${sName}:check_`));
   /* Pseudo-radios */
   ["crew_tier", ...actionsFlat].forEach(handlePseudoRadio);
