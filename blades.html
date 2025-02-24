@@ -88,11 +88,11 @@
       <select name="attr_generate_source_crew">
         <optgroup data-i18n-label="book_blades">
           <option value="assassins" data-i18n="assassins" selected="selected"></option>
-          <option value="bravos" data-i18n="bravos"></option>
-          <option value="cult" data-i18n="cult"></option>
-          <option value="hawkers" data-i18n="hawkers"></option>
-          <option value="shadows" data-i18n="shadows"></option>
-          <option value="smugglers" data-i18n="smugglers"></option>
+          <option value="thugs" data-i18n="thugs"></option>
+          <option value="occult_Club" data-i18n="occult_Club"></option>
+          <option value="social_club" data-i18n="social_club"></option>
+          <option value="thieves" data-i18n="thieves"></option>
+          <option value="couriers" data-i18n="couriers"></option>
           <option value="vigilantes" data-i18n="vigilantes"></option>
         </optgroup>
         <optgroup data-i18n-label="book_red">
@@ -909,7 +909,7 @@
           <div class="planning-content">
             <div class="planningdesc" data-i18n="planningdesc"></div>
             <div class="teamworkbox"><span class="bold" data-i18n="assault"></span><span class="italic" data-i18n="detail_assault"></span></div>
-            <div class="teamworkbox"><span class="bold" data-i18n="occult"></span><span class="italic" data-i18n="detail_occult"></span></div>
+            <div class="teamworkbox"><span class="bold" data-i18n="ococcult_Club"></span><span class="italic" data-i18n="detail_ococcult_Club"></span></div>
             <div class="teamworkbox"><span class="bold" data-i18n="deception"></span><span class="italic" data-i18n="detail_deception"></span></div>
             <div class="teamworkbox"><span class="bold" data-i18n="social"></span><span class="italic" data-i18n="detail_social"></span></div>
             <div class="teamworkbox"><span class="bold" data-i18n="stealth"></span><span class="italic" data-i18n="detail_stealth"></span></div>
@@ -3836,7 +3836,7 @@
         numboxes: "1",
       }]
     },
-    bravos: {
+    thugs: {
       base: {
         claim_1_desc: "claim_barracks_description",
         claim_1_name: "claim_barracks",
@@ -3867,10 +3867,10 @@
         claim_bridge_12_13: 0,
         cohort1_type: "gang",
         cohort1_subtype: "thugs",
-        crew_description: "crew_bravos_description",
-        crew_xp_condition: "crew_bravos_xp_condition",
-        hunting_grounds_type: "crew_bravos_hunting_grounds_type",
-        hunting_grounds_description: "crew_bravos_hunting_grounds_description",
+        crew_description: "crew_thugs_description",
+        crew_xp_condition: "crew_thugs_xp_condition",
+        hunting_grounds_type: "crew_thugs_hunting_grounds_type",
+        hunting_grounds_description: "crew_thugs_hunting_grounds_description",
         upgrade_prowess_check_1: "1"
       },
       crewability: ["dangerous", "blood_brothers", "door_kickers", "fiends", "forged_in_the_fire", "patron", "war_dogs", "veteran"],
@@ -3878,7 +3878,7 @@
         name: "crew_upgrade_hardened",
         numboxes: "3"
       }, {
-        name: "crew_upgrade_bravos_rigging",
+        name: "crew_upgrade_thugs_rigging",
         numboxes: "1"
       }, {
         name: "crew_upgrade_ironhook_contacts",
@@ -3891,7 +3891,7 @@
         numboxes: "1",
       }]
     },
-    cult: {
+    occult_Club: {
       base: {
         claim_1_desc: "claim_cloister_description",
         claim_1_name: "claim_cloister",
@@ -3924,10 +3924,10 @@
         claim_bridge_13_14: 0,
         cohort1_type: "gang",
         cohort1_subtype: "adepts",
-        crew_description: "crew_cult_description",
-        crew_xp_condition: "crew_cult_xp_condition",
-        hunting_grounds_type: "crew_cult_hunting_grounds_type",
-        hunting_grounds_description: "crew_cult_hunting_grounds_description",
+        crew_description: "crew_occult_Club_description",
+        crew_xp_condition: "crew_occult_Club_xp_condition",
+        hunting_grounds_type: "crew_occult_Club_hunting_grounds_type",
+        hunting_grounds_description: "crew_occult_Club_hunting_grounds_description",
         setting_show_deity: "1",
         upgrade_resolve_check_1: "1"
       },
@@ -3936,7 +3936,7 @@
         name: "crew_upgrade_ordained",
         numboxes: "3"
       }, {
-        name: "crew_upgrade_cult_rigging",
+        name: "crew_upgrade_occult_Club_rigging",
         numboxes: "1"
       }, {
         name: "crew_upgrade_ritual_sanctum_in_lair",
@@ -4004,7 +4004,7 @@
         numboxes: "3",
       }]
     },
-    hawkers: {
+    social_club: {
       base: {
         claim_1_name: "claim_turf",
         claim_2_desc: "claim_personal_clothier_description",
@@ -4036,10 +4036,10 @@
         claim_bridge_10_15: 0,
         claim_bridge_12_13: 0,
         claim_bridge_13_14: 0,
-        crew_description: "crew_hawkers_description",
-        crew_xp_condition: "crew_hawkers_xp_condition",
-        hunting_grounds_type: "crew_hawkers_hunting_grounds_type",
-        hunting_grounds_description: "crew_hawkers_hunting_grounds_description",
+        crew_description: "crew_social_club_description",
+        crew_xp_condition: "crew_social_club_xp_condition",
+        hunting_grounds_type: "crew_social_club_hunting_grounds_type",
+        hunting_grounds_description: "crew_social_club_hunting_grounds_description",
         upgrade_secure_check_1: "1",
         upgrade_resolve_check_1: "1"
       },
@@ -4102,7 +4102,7 @@
         upgrade_resolve_check_1: "1",
         upgrade_quarters_check_1: "1"
       },
-      crewability: ["anointed", "locals", "shadows", "exquisite_delights", "as_one", "ritual_of_bleeding", "dark_clientele", "all_hands", "veteran"],
+      crewability: ["anointed", "locals", "thieves", "exquisite_delights", "as_one", "ritual_of_bleeding", "dark_clientele", "all_hands", "veteran"],
       upgrade: [{
         name: "crew_upgrade_roots_rigging",
         numboxes: "1"
@@ -4121,7 +4121,7 @@
       }]
     },
 
-    shadows: {
+    thieves: {
       base: {
         claim_1_desc: "claim_interrogation_chamber_description",
         claim_1_name: "claim_interrogation_chamber",
@@ -4152,10 +4152,10 @@
         claim_bridge_2_7: 0,
         claim_bridge_9_14: 0,
         claim_bridge_12_13: 0,
-        crew_description: "crew_shadows_description",
-        crew_xp_condition: "crew_shadows_xp_condition",
-        hunting_grounds_type: "crew_shadows_hunting_grounds_type",
-        hunting_grounds_description: "crew_shadows_hunting_grounds_description",
+        crew_description: "crew_thieves_description",
+        crew_xp_condition: "crew_thieves_xp_condition",
+        hunting_grounds_type: "crew_thieves_hunting_grounds_type",
+        hunting_grounds_description: "crew_thieves_hunting_grounds_description",
         upgrade_hidden_check_1: "1",
         upgrade_prowess_check_1: "1"
       },
@@ -4177,7 +4177,7 @@
         numboxes: "1",
       }]
     },
-    smugglers: {
+    couriers: {
       base: {
         claim_1_name: "claim_turf",
         claim_2_desc: "claim_side_business_description",
@@ -4212,10 +4212,10 @@
         cohort1_name: "vehicle",
         cohort1_subtype: "boat_carriage_other",
         cohort1_type: "expert",
-        crew_description: "crew_smugglers_description",
-        crew_xp_condition: "crew_smugglers_xp_condition",
-        hunting_grounds_type: "crew_smugglers_hunting_grounds_type",
-        hunting_grounds_description: "crew_smugglers_hunting_grounds_description",
+        crew_description: "crew_couriers_description",
+        crew_xp_condition: "crew_couriers_xp_condition",
+        hunting_grounds_type: "crew_couriers_hunting_grounds_type",
+        hunting_grounds_description: "crew_couriers_hunting_grounds_description",
         upgrade_carriage_check_1: "1",
         upgrade_carriage_name: "vehicle",
         upgrade_boat_name: "vehicle",
@@ -4654,7 +4654,7 @@
       }]
     },
     rafiq: {
-      ability: ["eye_for_weakness", "cut-out", "functioning_vice", "ghost_friend", "hypnotic", "occultist", "trust_in_me", "veteran"],
+      ability: ["eye_for_weakness", "cut-out", "functioning_vice", "ghost_friend", "hypnotic", "ococcult_Clubist", "trust_in_me", "veteran"],
       base: {
         char_cohort_name: "archetype_item_a_special_friend",
         consort: "2",
@@ -4886,7 +4886,7 @@
       }]
     },
     weird: {
-      ability: ["compel", "ghost_mind", "iron_will", "occultist", "ritual", "strange_methods", "tempest", "warded", "veteran"],
+      ability: ["compel", "ghost_mind", "iron_will", "ococcult_Clubist", "ritual", "strange_methods", "tempest", "warded", "veteran"],
       base: {
         attune: "2",
         friends_title: "archetype_weird_friends_title",
